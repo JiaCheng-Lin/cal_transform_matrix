@@ -1,0 +1,1 @@
+python collect_data.py webcam --camid 0 --fp16 --fuse --save_result
