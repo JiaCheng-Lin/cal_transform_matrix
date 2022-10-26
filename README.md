@@ -1,6 +1,6 @@
 # cal_transform_matrix
 
-## **The steps of collecting data :**
+## **The steps of collecting data and cal the Transform T :**
 ### 1.  execute the following script. 
 ```bash
 python collect_data.py
