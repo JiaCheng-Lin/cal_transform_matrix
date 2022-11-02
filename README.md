@@ -13,6 +13,12 @@ Contains the coordinates of the **point** of the person in **mmwave** and the co
 ```bash
 python cal_T.py
 ```
+or
+```bash
+python cal_T_regression.py
+```
+"cal_T_regression.py" using polynomial regression to project mmwave pts to img.
+
 #### **Note:** you need to change the 'data_path' to your new .npy file name
 
 After get the transform **T**, update it to the .../inference/mmwave_utils.mmwave.py -> **process_mmwave()** function.
