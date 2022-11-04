@@ -55,7 +55,7 @@ def main():
     P = []
 
     # u, v, x, y, estimate image point
-    data_path = "./data/data_2022_10_27_02_46_16.npy"
+    data_path = "./data/data_2022_11_02_20_07_45.npy"
     data = np.load(data_path)
     # print(data.shape) # [.., 4] [center_x, center_y, x, y], pixel, meter.
     U = data[:, 0].astype(int)

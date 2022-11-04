@@ -129,17 +129,16 @@ def main():
     # visualization(XY)
 
     ### poly regression
-    final_mean_err = np.infs
-    for degree in np.arange(2, 5, 1): # 
-        # print(degree)
+    final_mean_err = np.inf
+    for degree in np.arange(2, 6, 1): # 
         regressor, mean_err, max_err, min_err = poly_regression(XY, UV, poly_degree=degree, vis=False)
         if mean_err < final_mean_err:
             final_reg = regressor
             final_mean_err = mean_err
             final_max_err = max_err
             final_min_err = min_err
-    print(final_reg.steps[0][1].degree)
-    print("error", final_mean_err, final_max_err, final_min_err)
+    print("degree:", final_reg.steps[0][1].degree)
+    print("error:", final_mean_err, final_max_err, final_min_err)
     dump(regressor, './data/'+data_name+'.joblib')
 
 
